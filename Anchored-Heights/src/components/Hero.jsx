@@ -14,3 +14,6 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+//Image by teksomolika on Freepik
