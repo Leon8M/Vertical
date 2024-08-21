@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#00A8E8] text-white shadow-md fixed w-full z-50">
+    <header className="absolute z-50 w-full text-white bg-transparent shadow-md">
       <div className="container flex items-center justify-between px-4 py-4 mt-0 ml-0">
         {/* Logo */}
         <div className="text-2xl font-bold">
