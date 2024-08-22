@@ -5,6 +5,7 @@ const About = () => {
     <section id="about" className="px-4 py-16 bg-white">
       <div className="container max-w-screen-lg mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-[#1D3557] mb-6">About Us</h2>
+        <h4>Company Motto: <span>Cost-Efficient and Safe High-Altitude Cleaning Solutions</span></h4>
         <p className="mb-6 text-lg text-gray-700">
           At Anchored Heights, we specialize in industrial high-altitude cleaning, retrieval, and installation services using advanced rope access techniques. Our team of highly skilled and competent technicians delivers exceptional service with a focus on efficiency and safety, saving you both time and resources.
         </p>
