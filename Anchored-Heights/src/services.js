@@ -2,7 +2,7 @@
 const services = [
   {
     title: "Window Cleaning",
-    description: "Spotless, streak-free window cleaning to enhance your property's appearance.",
+    description: "Spotless window cleaning to enhance your property's appearance.",
   },
   {
     title: "High Level Facade Cleaning",
