@@ -26,7 +26,7 @@ const Contact = () => {
   return (
     <section id="contact" className="px-4 py-16 bg-gray-100">
       <div className="container max-w-screen-md mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#1D3557] mb-8">Request A Quote…or ask us to call you back</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-[#1D3557] mb-8">For Inquiries or to Request A Quote...</h2>
         <form onSubmit={handleSubmit} className="p-8 bg-white rounded-lg shadow-lg">
           <div className="mb-6">
             <label htmlFor="name" className="block mb-2 font-semibold text-gray-700">Name</label>
@@ -68,7 +68,7 @@ const Contact = () => {
           </div>
 
           <div className="mb-6">
-            <label htmlFor="message" className="block mb-2 font-semibold text-gray-700">Type Your Message (include phone number)</label>
+            <label htmlFor="message" className="block mb-2 font-semibold text-gray-700">Tell us.....</label>
             <textarea
               id="message"
               name="message"
