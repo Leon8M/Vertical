@@ -14,7 +14,7 @@ const Services = () => {
           {services.map((service, index) => (
             <li
               key={index}
-              className="relative p-6 bg-gray-50 rounded-lg shadow-sm transition-all duration-300"
+              className="relative p-6 bg-gray-50 rounded-lg shadow-sm transition-all duration-500 ease-in-out"
               onMouseEnter={() => setHoveredService(index)}
               onMouseLeave={() => setHoveredService(null)}
             >
@@ -25,12 +25,11 @@ const Services = () => {
                 </span>
               </div>
 
-              {/* Dropdown Description */}
               <div
-                className={`absolute top-0 left-0 w-full h-full bg-white rounded-lg shadow-lg p-6 overflow-hidden transition-all duration-300 transform ${
+                className={`absolute top-0 left-0 w-full h-full bg-white rounded-lg shadow-lg p-6 transition-opacity transform scale-95 duration-500 ease-in-out ${
                   hoveredService === index
-                    ? "translate-y-0 opacity-100 z-10" // Bring to front when hovered
-                    : "-translate-y-full opacity-0 z-0" // Stay behind when not hovered
+                    ? "opacity-100 scale-100 z-10"
+                    : "opacity-0 scale-95 z-0 pointer-events-none"
                 }`}
               >
                 <p className="text-sm text-gray-600">{service.description}</p>
