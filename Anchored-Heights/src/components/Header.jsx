@@ -17,8 +17,8 @@ const Header = () => {
         {/* Logo */}
         <div className="text-2xl font-bold">
           <a href="#home" className='flex items-center font-quicksand font-bold'>
-            <img src="/logo.png" alt="Anchored Heights Logo" className="h-16 md:h-24 mt-0" />
-            Vertical Techniques Ltd
+            <img src="/logo.png" alt="Anchored Heights Logo" className="h-16 md:h24 mt-0" />
+            Vertical Techniques Ltd.
           </a>
         </div>
 
