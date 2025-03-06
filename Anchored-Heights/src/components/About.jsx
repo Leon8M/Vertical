@@ -9,7 +9,7 @@ const About = () => {
           About Us
         </h2>
 
-        {/* Company Motto Card */}
+        {/* Company Motto Card 
         <div className="bg-[#1D3557] rounded-lg p-6 mb-8 shadow-lg">
           <h4 className="text-xl font-semibold text-white text-center">
             Company Motto:
@@ -17,18 +17,19 @@ const About = () => {
               Cost-Efficient and Safe High-Altitude Cleaning Solutions
             </span>
           </h4>
-        </div>
+        </div>*/}
 
         {/* About Content */}
         <div className="space-y-6">
           <p className="text-lg text-gray-700 leading-relaxed">
-            At <span className="font-semibold text-[#1D3557]">Vertical Techniques</span>, we specialize in industrial high-altitude cleaning, retrieval, and installation services using advanced rope access techniques. Our team of highly skilled and competent technicians delivers exceptional service with a focus on efficiency and safety, saving you both time and resources.
+            At <span className="font-semibold text-[#1D3557]">Vertical Techniques</span>, we specialize in high attitude abseil window cleaning and replacement, retrieval plastering minor painting, leak repairs, silicone applications, solar panel cleaning, Alucobond repair, replacement and installation of equipment and rope access anchors.
+            Our team of highly skilled and competent technicians delivers exceptional service with a focus on efficiency and safety, saving you both time and resources.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            Our experienced rope access professionals excel in completing short-term cleaning projects and complex high-altitude tasks swiftly. We eliminate the need for cumbersome scaffolding setups and breakdowns, ensuring your projects are finished quickly and without any interruptions to your core operations.
+            Our experienced rope access professionals excel in completing high-rise short-term tasks and complex high-altitude projects on time. We eliminate the need for cumbersome scaffolding setups and breakdowns, ensuring your projects are finished quickly and without any interruptions to your core operations.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            Discover how <span className="font-semibold text-[#1D3557]">Vertical Techniques</span> can elevate your cleaning experience with our innovative approach and unparalleled expertise. Whether it’s towering skyscrapers or intricate industrial structures, we’ve got the skills and solutions to reach new heights—safely and efficiently.
+            Discover how <span className="font-semibold text-[#1D3557]">Vertical Techniques</span> can elevate your cleaning experience with our rope access expertise. Whether you need Façade cleaning, light installation, structural repairs or exterior equipment setup, we deliver outstanding result sufficiently minimizing disruption to optimize your time and resources.
           </p>
         </div>
 

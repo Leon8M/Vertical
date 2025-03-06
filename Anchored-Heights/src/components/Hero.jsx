@@ -15,10 +15,10 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div> {/* Dark overlay */}
       <div className="container relative z-10 flex flex-col items-start justify-center h-full px-4 mx-auto">
         <h1 className="mb-4 text-4xl font-bold text-white md:text-6xl">
-          Reach New Heights with Confidence
+        Leave the heights to us, so you can focus on yours!
         </h1>
         <p className="mb-8 text-lg text-white md:text-xl">
-          Specializing in industrial high-altitude cleaning, retrieval, and installation services.
+          Specializing in high-altitude buildings cleaning, structural repairs, and installation services.
         </p>
         <a
           href="#about"

@@ -16,8 +16,8 @@ const Header = () => {
       <div className="container flex items-center justify-between px-4 py-4 mt-0 ml-0">
         {/* Logo */}
         <div className="text-2xl font-bold">
-          <a href="#home" className='flex items-center font-quicksand'>
-            <img src="/logo.png" alt="Anchored Heights Logo" className="h-12 mt-0" />
+          <a href="#home" className='flex items-center font-quicksand font-bold'>
+            <img src="/logo.png" alt="Anchored Heights Logo" className="h-16 md:h-24 mt-0" />
             Vertical Techniques Ltd
           </a>
         </div>
