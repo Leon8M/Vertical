@@ -26,7 +26,7 @@ const Header = () => {
         <nav className="hidden space-x-8 md:flex">
           <button onClick={() => handleScroll('about')} className="hover:text-[#00A8E8] transition-colors">About</button>
           <button onClick={() => handleScroll('services')} className="hover:text-[#00A8E8] transition-colors">Services</button>
-          <button onClick={() => handleScroll('equipment')} className="hover:text-[#00A8E8] transition-colors">Equipment</button>
+          <button onClick={() => handleScroll('equipment')} className="hover:text-[#00A8E8] transition-colors">Why Us?</button>
           <button onClick={() => handleScroll('contact')} className="hover:text-[#00A8E8] transition-colors">Contact</button>
         </nav>
 
