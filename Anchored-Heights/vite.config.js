@@ -15,6 +15,7 @@ export default defineConfig({
     })
   ],
   build: {
+    base: '/Anchored-Heights/',
     outDir: 'dist',
     emptyOutDir: true,
   }
