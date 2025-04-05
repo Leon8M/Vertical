@@ -12,7 +12,7 @@ const Hero = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div> {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div> {/* Dark overlay, glitchy at times */}
       <div className="container relative z-10 flex flex-col items-start justify-center h-full px-4 mx-auto">
         <h1 className="mb-4 text-4xl font-bold text-white md:text-6xl">
         Leave the heights to us, so you can focus on yours!

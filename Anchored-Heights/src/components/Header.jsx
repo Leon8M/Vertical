@@ -30,7 +30,7 @@ const Header = () => {
           <button onClick={() => handleScroll('contact')} className="hover:text-[#00A8E8] transition-colors">Contact</button>
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button *might change it soon */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
             <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

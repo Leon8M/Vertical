@@ -9,7 +9,7 @@ const About = () => {
           About Us
         </h2>
 
-        {/* Company Motto Card 
+        {/* Company Motto Card *Ask tonnie when he needs it
         <div className="bg-[#1D3557] rounded-lg p-6 mb-8 shadow-lg">
           <h4 className="text-xl font-semibold text-white text-center">
             Company Motto:
@@ -19,7 +19,7 @@ const About = () => {
           </h4>
         </div>*/}
 
-        {/* About Content */}
+        {/* About Content , might need updating */}
         <div className="space-y-6">
           <p className="text-lg text-gray-700 leading-relaxed">
             At <span className="font-semibold text-[#1D3557]">Vertical Techniques</span>, we specialize in high attitude Abseil window cleaning and replacement, retrieval, sealing cracks & plastering, minor painting, leak repairs, silicone applications, solar panel cleaning, Alucobond repair, replacement and installation of equipment and rope access anchors.
