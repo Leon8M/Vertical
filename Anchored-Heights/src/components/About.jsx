@@ -42,11 +42,11 @@ const About = () => {
           </a>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
-          <img src="/Anchored-Heights/1.jpg" alt="Team working on a project" className="rounded-lg shadow-lg" />
-          <img src="/Anchored-Heights/2.jpg" alt="Worker using equipment" className="rounded-lg shadow-lg" />
-          <img src="/Anchored-Heights/3.jpg" alt="High-altitude maintenance" className="rounded-lg shadow-lg" />
-          <img src="/Anchored-Heights/4.jpg" alt="High-altitude maintenance" className="rounded-lg shadow-lg" />
-          <img src="/Anchored-Heights/5.jpg" alt="High-altitude maintenance" className="rounded-lg shadow-lg" />
+          <img src="/1.jpg" alt="Team working on a project" className="rounded-lg shadow-lg" />
+          <img src="/2.jpg" alt="Worker using equipment" className="rounded-lg shadow-lg" />
+          <img src="/3.jpg" alt="High-altitude maintenance" className="rounded-lg shadow-lg" />
+          <img src="/4.jpg" alt="High-altitude maintenance" className="rounded-lg shadow-lg" />
+          <img src="/5.jpg" alt="High-altitude maintenance" className="rounded-lg shadow-lg" />
         </div>
       </div>
     </section>
