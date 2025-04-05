@@ -6,7 +6,7 @@ const Hero = () => {
       id="home"
       className="relative h-screen bg-center bg-cover"
       style={{
-        backgroundImage: "url('/Anchored-Heights/4657.jpg')",
+        backgroundImage: "url('/4657.jpg')",
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
