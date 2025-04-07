@@ -19,6 +19,7 @@ const Contact = () => {
     e.preventDefault();
     console.log('Form submitted:', formData);
     // Reset form after submission, weird error if not
+    e.target.submit();
     setFormData({ name: '', email: '', phone: '', message: '' });
   };
 
@@ -26,7 +27,13 @@ const Contact = () => {
     <section id="contact" className="px-4 py-16 bg-gray-100">
       <div className="container max-w-screen-md mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-[#1D3557] mb-8">For Inquiries or to Request A Quote...</h2>
-        <form onSubmit={handleSubmit} className="p-8 bg-white rounded-lg shadow-lg">
+        <form 
+          action="https://formsubmit.co/sales@verticaltechniques.co.ke" 
+          method="POST"
+          className="p-8 bg-white rounded-lg shadow-lg"
+          onSubmit={handleSubmit}
+        >
+        
           <div className="mb-6">
             <label htmlFor="name" className="block mb-2 font-semibold text-gray-700">Name</label>
             <input
