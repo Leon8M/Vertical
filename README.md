@@ -1,4 +1,4 @@
-# Anchored Heights
+# Vertical Techniques
 
 Cost-Efficient and Safe High-Altitude Cleaning Solutions
 
@@ -15,8 +15,6 @@ Discover how Anchored Heights can elevate your cleaning experience with our inno
 - [Our Expertise](#our-expertise)
 - [Safety](#safety)
 - [Contact Us](#contact-us)
-- [Projects](#projects) (Optional - Add if you have a portfolio)
-- [FAQ](#faq) (Optional)
 
 ## About Us
 
@@ -46,21 +44,8 @@ Safety is our top priority.  We adhere to strict industry safety standards and r
 
 ## Contact Us
 
-*   Email: [your_email@example.com](mailto:your_email@example.com)
-*   Phone: [your_phone_number]
-*   Address: [your_address] (Optional)
-
-## Projects (Optional)
-
-(Showcase some of your successful projects with images and brief descriptions.  This builds credibility.)
-
-## FAQ (Optional)
-
-*   **Q: What is rope access?** A: Rope access is a safe and efficient method of working at height using ropes and specialized equipment. It allows us to access difficult-to-reach areas without the need for scaffolding or other costly solutions.
-*   **Q: How do you ensure safety?** A: (Explain your safety protocols in more detail)
-*   **Q: What types of projects do you handle?** A: (Summarize the range of projects you can handle)
+*   Email: sales@verticaltechniques.co.ke
+*   Phone: +254 727 070186
+*   Address: Maruti Heights, Langata Link Road, Office 5A, Nairobi, Kenya
 
 
----
-
-**Note:** Remember to replace the placeholders with your actual details.  High-quality images of your team in action, before-and-after shots of your cleaning projects, and any certifications or awards you have received will greatly enhance your README.  Since safety is paramount in your industry, emphasizing your safety procedures and certifications is crucial.
