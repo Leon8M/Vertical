@@ -35,10 +35,10 @@ const About = () => {
 
         <div className="mt-8 text-center">
           <a
-            href="#contact" 
+            href="/projects" 
             className="inline-block px-6 py-3 bg-[#F67E17] text-white font-semibold rounded-lg shadow-md hover:bg-[#FF9933] transition-all duration-300"
           >
-            Learn More About Us
+            See our successful projects
           </a>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">

@@ -1,57 +1,56 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const handleScroll = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false); // Close the mobile menu after clicking a link
+    if (location.pathname !== '/') {
+      window.location.href = `/#${id}`;
+    } else {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+    setIsOpen(false);
   };
 
   return (
-    <header className="absolute z-50 w-full text-white bg-transparent shadow-md">
-      <div className="container flex items-center justify-between px-4 py-4 mt-0 ml-0">
-        {/* Logo */}
-        <div className="text-2xl font-bold">
-          <a href="#home" className='flex items-center font-quicksand font-bold'>
-            <img src="/logo.png" alt="Anchored Heights Logo" className="h-16 md:h24 mt-0" />
-            Vertical Techniques Ltd.
-          </a>
-        </div>
+    <header className="absolute z-40 w-full text-white bg-transparent">
+      <div className="container flex items-center justify-between px-4 py-4 mx-auto">
+        <Link to="/" className="flex items-center text-2xl font-bold font-quicksand">
+          <img src="/logo.png" alt="Vertical Techniques Logo" className="h-16 md:h-20" />
+          Vertical Techniques Ltd.
+        </Link>
 
-        {/* Navigation Links (Desktop) */}
-        <nav className="hidden space-x-8 md:flex">
-          <button onClick={() => handleScroll('about')} className="hover:text-[#00A8E8] transition-colors">About</button>
-          <button onClick={() => handleScroll('services')} className="hover:text-[#00A8E8] transition-colors">Services</button>
-          <button onClick={() => handleScroll('equipment')} className="hover:text-[#00A8E8] transition-colors">Why Us?</button>
-          <button onClick={() => handleScroll('contact')} className="hover:text-[#00A8E8] transition-colors">Contact</button>
+        {/* Desktop Navigation */}
+        <nav className="hidden space-x-6 md:flex text-lg">
+          <Link to="/projects" className="hover:text-[#F67E17] transition-colors">Projects</Link>
+          <button onClick={() => handleScroll('about')} className="hover:text-[#F67E17] transition-colors">About</button>
+          <button onClick={() => handleScroll('services')} className="hover:text-[#F67E17] transition-colors">Services</button>
+          <button onClick={() => handleScroll('why')} className="hover:text-[#F67E17] transition-colors">Why Us?</button>
+          <button onClick={() => handleScroll('contact')} className="hover:text-[#F67E17] transition-colors">Contact</button>
         </nav>
 
-        {/* Mobile Menu Button *might change it soon */}
+        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
-            <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              {isOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
+            {/* ... (SVG icon code remains the same) ... */}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#1D3557]">
-          <nav className="flex flex-col py-4 space-y-4">
-            <button onClick={() => handleScroll('about')} className="hover:text-[#00A8E8] transition-colors px-4">About</button>
-            <button onClick={() => handleScroll('services')} className="hover:text-[#00A8E8] transition-colors px-4">Why us</button>
-            <button onClick={() => handleScroll('equipment')} className="hover:text-[#00A8E8] transition-colors px-4">Services</button>
-            <button onClick={() => handleScroll('contact')} className="hover:text-[#00A8E8] transition-colors px-4">Contact</button>
+        <div className="md:hidden bg-[#1D3557] bg-opacity-90">
+          <nav className="flex flex-col items-center py-4 space-y-4">
+            <Link to="/projects" onClick={() => setIsOpen(false)} className="hover:text-[#F67E17] transition-colors px-4">Projects</Link>
+            <button onClick={() => handleScroll('about')} className="hover:text-[#F67E17] transition-colors px-4">About</button>
+            <button onClick={() => handleScroll('services')} className="hover:text-[#F67E17] transition-colors px-4">Services</button>
+            <button onClick={() => handleScroll('why')} className="hover:text-[#F67E17] transition-colors px-4">Why Us</button>
+            <button onClick={() => handleScroll('contact')} className="hover:text-[#F67E17] transition-colors px-4">Contact</button>
           </nav>
         </div>
       )}
