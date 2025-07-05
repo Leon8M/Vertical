@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const projects = [
   {
@@ -8,7 +9,7 @@ const projects = [
     videos: ["/vid1.mp4", "/vid2.mp4"],
     images: [],
   },
-  // ... more projects can be added here
+  // Add more projects as needed
 ];
 
 const SuccessfulProjects = () => {
@@ -21,41 +22,42 @@ const SuccessfulProjects = () => {
 
         <div className="space-y-16">
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: index * 0.2 }}
+              className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300"
             >
               <div className="grid grid-cols-1 lg:grid-cols-2">
-                {/* Media Section */}
                 <div className="grid grid-cols-2 gap-2 p-4">
                   {project.videos.map((video, vIndex) => (
-                    <div key={vIndex} className="rounded-lg overflow-hidden">
-                      <video
-                        src={video}
-                        autoPlay
-                        muted
-                        loop
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
+                    <video
+                      key={vIndex}
+                      src={video}
+                      autoPlay
+                      muted
+                      loop
+                      className="w-full h-56 object-cover rounded-lg shadow-md"
+                    />
                   ))}
                   {project.images.map((image, iIndex) => (
-                     <div key={iIndex} className="rounded-lg overflow-hidden">
-                        <img src={image} alt={`${project.title} ${iIndex + 1}`} className="w-full h-full object-cover" />
-                    </div>
+                    <img
+                      key={iIndex}
+                      src={image}
+                      alt={`${project.title} ${iIndex + 1}`}
+                      className="w-full h-56 object-cover rounded-lg shadow-md"
+                    />
                   ))}
                 </div>
-
-                {/* Content Section */}
                 <div className="p-8 flex flex-col justify-center">
-                  <h3 className="text-3xl font-bold text-[#1D3557] mb-3">{project.title}</h3>
-                  <p className="text-lg font-semibold text-[#F67E17] mb-4">{project.location}</p>
-                  <p className="text-gray-600 leading-relaxed">
-                    {project.description}
-                  </p>
+                  <h3 className="text-3xl font-bold text-[#1D3557] mb-2">{project.title}</h3>
+                  <p className="text-[#F67E17] font-medium text-lg mb-4">{project.location}</p>
+                  <p className="text-gray-700 leading-relaxed">{project.description}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

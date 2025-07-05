@@ -1,4 +1,6 @@
+// Updated Contact.jsx with improved input design and icons
 import React, { useState } from 'react';
+import { User, Mail, Phone, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,78 +19,98 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Reset form after submission, weird error if not
     e.target.submit();
     setFormData({ name: '', email: '', phone: '', message: '' });
   };
 
   return (
-    <section id="contact" className="px-4 py-16 bg-gray-100">
-      <div className="container max-w-screen-md mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#1D3557] mb-8">For Inquiries or to Request A Quote...</h2>
-        <form 
-          action="https://formsubmit.co/sales@verticaltechniques.co.ke" 
+    <section id="contact" className="bg-gray-100">
+      <div className="container max-w-screen-md">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center">
+          For Inquiries or to Request A Quote...
+        </h2>
+
+        <form
+          action="https://formsubmit.co/sales@verticaltechniques.co.ke"
           method="POST"
-          className="p-8 bg-white rounded-lg shadow-lg"
           onSubmit={handleSubmit}
+          className="card space-y-6"
         >
-        
-          <div className="mb-6">
-            <label htmlFor="name" className="block mb-2 font-semibold text-gray-700">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-              className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#F67E17] focus:border-[#F67E17] outline-none"
-            />
+          <div>
+            <label htmlFor="name" className="block mb-1 text-sm font-semibold text-gray-700">
+              Name
+            </label>
+            <div className="relative">
+              <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-accent" size={18} />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-accent focus:outline-none"
+              />
+            </div>
           </div>
 
-          <div className="mb-6">
-            <label htmlFor="email" className="block mb-2 font-semibold text-gray-700">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#F67E17] focus:border-[#F67E17] outline-none"
-            />
+          <div>
+            <label htmlFor="email" className="block mb-1 text-sm font-semibold text-gray-700">
+              Email
+            </label>
+            <div className="relative">
+              <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-accent" size={18} />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-accent focus:outline-none"
+              />
+            </div>
           </div>
 
-          <div className="mb-6">
-            <label htmlFor="phone" className="block mb-2 font-semibold text-gray-700">Phone</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-              className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#F67E17] focus:border-[#F67E17] outline-none"
-            />
+          <div>
+            <label htmlFor="phone" className="block mb-1 text-sm font-semibold text-gray-700">
+              Phone
+            </label>
+            <div className="relative">
+              <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-accent" size={18} />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-accent focus:outline-none"
+              />
+            </div>
           </div>
 
-          <div className="mb-6">
-            <label htmlFor="message" className="block mb-2 font-semibold text-gray-700">Tell us.....</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              rows="5"
-              className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#F67E17] focus:border-[#F67E17] outline-none"
-            ></textarea>
+          <div>
+            <label htmlFor="message" className="block mb-1 text-sm font-semibold text-gray-700">
+              Tell us...
+            </label>
+            <div className="relative">
+              <MessageCircle className="absolute left-3 top-3 text-accent" size={18} />
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                rows="5"
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-accent focus:outline-none"
+              ></textarea>
+            </div>
           </div>
 
           <button
             type="submit"
-            className="w-full bg-[#F67E17] hover:bg-[#FF9933] text-white font-semibold py-3 rounded-md transition-colors"
+            className="w-full bg-accent hover:bg-accentHover text-white font-semibold py-3 rounded-md transition-all duration-300"
           >
             Send
           </button>

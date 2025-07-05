@@ -9,8 +9,16 @@ export default {
       fontFamily: {
         quicksand: ["Quicksand", "sans-serif"],
       },
+      colors: {
+        primary: "#1D3557",
+        accent: "#F67E17",
+        accentHover: "#FF9933",
+      },
+      container: {
+        center: true,
+        padding: "1rem",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 }
-

@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-quicksand text-primary bg-white;
+}
+
+section {
+  @apply py-16;
+}
+
+h1, h2, h3, h4, h5 {
+  @apply font-bold;
+}
+
+.container {
+  @apply max-w-screen-lg mx-auto px-4;
+}
+
+/* Card base styles */
+.card {
+  @apply bg-white rounded-xl shadow-md p-6 transition-transform duration-300 ease-in-out;
+}
+
+.card:hover {
+  @apply scale-[1.02] shadow-lg;
+}
