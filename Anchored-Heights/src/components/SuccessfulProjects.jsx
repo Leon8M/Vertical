@@ -2,9 +2,9 @@ import React from 'react';
 
 const projects = [
   {
-    title: "Mövenpick Hotel & Residences",
+    title: "Glee Nairobi Hotel & Residences",
     location: "Nairobi, Kenya",
-    description: "Comprehensive high-altitude facade cleaning for the prestigious Mövenpick Hotel. Our rope access team ensured a pristine finish with minimal disruption to hotel operations, enhancing the building's aesthetic appeal.",
+    description: "Comprehensive high-altitude facade cleaning for the prestigious Glee Nairobi Hotel. Our rope access team ensured a pristine finish with minimal disruption to hotel operations, enhancing the building's aesthetic appeal.",
     videos: ["/vid1.mp4", "/vid2.mp4"],
     images: [],
   },
