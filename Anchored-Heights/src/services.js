@@ -40,6 +40,10 @@ const services = [
     title: "Gutter Cleaning",
     description: "Thorough gutter cleaning to prevent blockages and water damage.",
   },
+  {
+    title: "Marble and Granite Countertops Polishing and Restoration",
+    description: "Expert polishing and restoration of marble and granite countertops to revive their natural shine and elegance.",
+  },
 ];
 
 export default services;
