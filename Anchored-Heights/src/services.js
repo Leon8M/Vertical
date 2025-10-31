@@ -25,7 +25,7 @@ const services = [
     description: "Professional painting for flawless, long-lasting finishes.",
   },
   {
-    title: "Alucoboard Repair and Replacement",
+    title: "Aluco board Repair and Replacement",
     description: "Specialized repair and replacement of Alucobond panels.",
   },
   {
