@@ -47,16 +47,6 @@ const VideoSplash = ({ onComplete }) => {
       className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-gradient-to-b from-black/80 to-black/60 backdrop-blur-2xl overflow-hidden"
       onClick={handleExit}
     >
-      {/* Scroll / Wait prompt - kept for original vibe */}
-      {!isExiting && (
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0, transition: { delay: 1.2, duration: 1 } }}
-          className="absolute bottom-28 text-white/90 text-lg px-5 py-2 rounded-lg z-30 select-none font-medium tracking-wide bg-white/10 backdrop-blur-sm"
-        >
-          Scroll or wait ↓
-        </motion.div>
-      )}
 
       {/* Click prompt */}
       {!isExiting && (
